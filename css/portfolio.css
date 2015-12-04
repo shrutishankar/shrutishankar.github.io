@@ -1,5 +1,18 @@
+.holder{
+margin:3%
+}
+
 .test {
-	width: 100px;
-	height: 100px;
-	background-color: blue;
+	width: 70%;
+    height: 70%;
+    background-color: turquoise;
+    float: right;
+    border-radius: 25px;
+}
+.desc-content{
+	margin-left: 10%;
+    margin-top: 10%;
+}
+.desc{
+	font-family: sans-serif;
 }
