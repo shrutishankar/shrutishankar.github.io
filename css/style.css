@@ -1,0 +1,193 @@
+/********** GENERAL **********/
+html {
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+div {
+    /*border: 1px solid red;*/
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.text-justified {
+    text-align: justify;
+}
+
+.top-margin-none {
+    margin-top : 0px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.transparent-button {
+    display: block;
+    position: relative;
+    margin: auto;
+
+    width: 180px;
+    height: 54px;
+    line-height: 54px;
+
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 12px;
+
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    color: #337AB7; /* #41DD85; */
+    background: none;
+    border: 2px solid #337AB7; /* #41DD85; */
+
+    transition: all 200ms ease-in-out 0s;
+}
+
+.transparent-button:hover {
+    background-color: #337AB7; /* #41DD85; */
+    opacity: 0.9;
+    text-decoration: none;
+    color: #FFFFFF;
+    letter-spacing: +0.05em;
+}
+
+/********** NAVBAR **********/
+
+.portfolio-navbar {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-image: none;
+    /*background-color: #F7F7F7;*/
+    background-color: #fff;
+
+
+    border-bottom: 0;
+    /* background: 0 0; */
+    -webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
+    transition: background .3s ease-in-out,padding .3s ease-in-out;
+}
+
+.portfolio-navbar-list {
+    background-color: rgba(255,255,255,.97);
+    margin-top: 0px;
+    color: #333332;
+
+    margin-right: 100px;
+}
+
+.portfolio-brand-name {
+    margin-left: 10px;
+}
+
+/********** PORTFOLIO SECTION **********/
+
+.portfolio-section-shaded {
+    background-color: #F7F7F7;
+}
+
+.portfolio-section {
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.portfolio-section-header {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 2.5em;
+}
+
+.portfolio-section-divider {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 50px;
+    border-top: 2px solid #B3B3B1;
+    padding-bottom: 40px;
+}
+
+
+/********** INTRO **********/
+
+.portfolio-intro {
+    padding-top: 81px;
+}
+.portfolio-intro-description {
+    text-align: center;
+}
+
+.portfolio-intro-description-heading {
+    letter-spacing: -0.025em;
+}
+
+/********** PORTFOLIO **********/
+
+.progress {
+    border: 2px solid #B3B3B1;
+    height: 25px;
+    padding: 1px;
+}
+
+.portfolio-progressbar {
+    text-align: left;
+    padding-left: 1em;
+    /*font-size: 0.8em;*/
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+
+/********** CONTACT **********/
+
+#contact {
+    line-height: 5em;
+}
+
+.contact-box {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    #send-me-a-message {
+        border-right: 1px solid #B3B3B1; /*rgba(0, 0, 0, 0.7);*/
+    }
+
+    #hire-me {
+        border-left: 1px solid #B3B3B1; /*rgba(0, 0, 0, 0.7);*/
+    }
+}
+
+.social-icon {
+    font-size: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.hire-icon {
+    font-size: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+/********** PORTFOLIO-FOOTER **********/
+
+.portfolio-footer {
+    width: 100%;
+    height: 50px;
+    font-size: 0.75em;
+    text-align: center;
+    padding: 1em;
+}
+
+.portfolio-footer-email-link {
+    text-decoration: underline;
+}
