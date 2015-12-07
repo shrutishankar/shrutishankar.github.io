@@ -1,24 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Shruti's portfolio</title>
-    <meta name="author" content="Shruti Shankar">
+        <title>Shruti's Portfolio</title>
+        <meta name="author" content="Shruti Shankar">
 
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+<body>
 
-</head>
-	<body class="holder">
-		<div class="test"><div class="desc-content"><p class="desc">Hi, I am Shruti, the portfolio is coming soon</p></div></div>
-	</body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top portfolio-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand portfolio-brand-name" href="#">SHRUTI SHANKAR</a>
+            </div>
+
+            <div class="collapse navbar-collapse portfolio-navbar-list" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="files/ShrutiShankar_Resume.pdf" download="Resume_Shruti_Shankar.pdf">RESUME</a></li>
+                    <!--<li><a href="#portfolio" class="anchor" data-id="portfolio">PORTFOLIO</a></li>-->
+                    <!--<li><a href="#contact" class="anchor" data-id="contact">CONTACT</a></li>-->
+                </ul>
+            </div>
+        </nav>
+
+        <section class="row portfolio-sections-intro">
+            <div class="col-md-12 no-left-right-padding">
+                <div class="jumbotron portfolio-sections-intro-jumbotron">
+                    <img class="desaturate img-responsive portfolio-sections-intro-jumbotron-image" alt="Shruti Shankar's Photo" src="images/shruti.jpg">
+                    <h2>Hi, I'm Shruti Shankar</h2>
+                    <p>A web developer, UX designer and a technology enthusiast.</p>
+                </div>
+            </div>
+        </section>
+        <section class="row  portfolio-section portfolio-sections-projects">
+            <header class="portfolio-section-header">Projects</header>
+            <div class="portfolio-section-divider"></div>
+
+            <div class="col-md-4 text-center portfolio-section-project">
+                <h3>Smart home design</h3>
+                <p>End to end product design for smart homes.</p>
+            </div>
+
+            <div class="col-md-4 text-center portfolio-section-project">
+                <h3>Event management company</h3>
+                <p>Website design of a hypothetical event management company.</p>
+            </div>
+
+            <div class="col-md-4 text-center portfolio-section-project">
+                <h3>Smart trash cans</h3>
+                <p>Wrote a research paper designing smart trash cans.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="portfolio-footer">Shruti Shankar | Email me: <a href="mailto: shruti07shankar@gmail.com">shruti07shankar@gmail.com</a></footer>
+
+    <script src="js/scripts.js"></script>
+
+</body>
 </html>
-
