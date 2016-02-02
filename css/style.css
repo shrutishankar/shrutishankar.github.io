@@ -127,3 +127,11 @@ img.desaturate{
     text-align: center;
     font-size: 0.8em;
 }
+
+/******** PORTFOLIO TEXT**********/
+
+#portfolio-text{
+    text-align: justify;
+    font-size: 1.2em;
+    /*margin-left: 10em;*/
+}
