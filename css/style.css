@@ -44,6 +44,40 @@ img.desaturate{
 	filter: url(desaturate.svg#greyscale);
 }
 
+/********** QUOTATIONS **********/
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    margin: 1em 0;
+    padding: 0.25em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+    border: 0px;
+}
+
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #B3B3B1;
+}
+
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}
+
 /********** NAVBAR **********/
 
 .portfolio-navbar {
@@ -73,6 +107,25 @@ img.desaturate{
     margin-left: 10px;
 }
 
+/********** INTRO **********/
+
+.portfolio-sections-intro {
+    padding-top: 81px;
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.portfolio-sections-intro-jumbotron {
+    background-color: #FECD40;
+    background-color: #F7F7F7;
+    border-radius: 0px !important;
+}
+
+.portfolio-sections-intro-jumbotron-image {
+    display: inline;
+}
+
 /********** PORTFOLIO SECTION **********/
 
 .portfolio-section {
@@ -95,25 +148,31 @@ img.desaturate{
     padding-bottom: 40px;
 }
 
-
-/********** INTRO **********/
-
-.portfolio-sections-intro {
-    padding-top: 81px;
-    text-align: center;
-    padding-right: 0px;
-    padding-left: 0px;
+.portfolio-text {
+    text-align: justify;
+    font-size: 1.2em;
+    /*margin-left: 10em*/;
 }
 
-.portfolio-sections-intro-jumbotron {
-    background-color: #FECD40;
-    background-color: #F7F7F7;
-    border-radius: 0px !important;
+.portfolio-project-label{
+    background: #00827F;
+    cursor: pointer;
+    padding: 4em;
+    border-radius: 50%;
+    height: 16em;
+    color: #ffffff;
 }
 
-.portfolio-sections-intro-jumbotron-image {
-    display: inline;
+.portfolio-project-label:hover{
+    border: 10em;
+    color: #000000;
+    opacity: 0.5;
+    transition: 1s ease-in;
+    font-weight: bold;
+
 }
+
+
 
 /********** PROJECTS **********/
 
@@ -128,10 +187,5 @@ img.desaturate{
     font-size: 0.8em;
 }
 
-/******** PORTFOLIO TEXT**********/
 
-#portfolio-text{
-    text-align: justify;
-    font-size: 1.2em;
-    /*margin-left: 10em;*/
-}
+

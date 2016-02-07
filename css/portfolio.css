@@ -1,5 +1,5 @@
 .holder{
-margin:3%
+    margin: 3%;
 }
 
 .test {
@@ -9,10 +9,12 @@ margin:3%
     float: right;
     border-radius: 25px;
 }
+
 .desc-content{
 	margin-left: 10%;
     margin-top: 10%;
 }
+
 .desc{
 	font-family: sans-serif;
 }

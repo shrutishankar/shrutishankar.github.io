@@ -34,7 +34,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#Mystory" class="anchor" data-id="story">My Story</a></li>
                     <li><a href="#portfolio" class="anchor" data-id="portfolio">Portfolio</a></li>
-                    <li><a href="#exp" class="anchor" data-id="Experience">Experience</a></li>
+                    <li><a href="#exp" class="anchor" data-id="experience">Experience</a></li>
+                    <li><a href="#skills" class="anchor" data-id="skills">Skills</a></li>
                     <li><a href="#contact" class="anchor" data-id="contact">Contact</a></li>
                     <li><a href="files/ShrutiShankar_Resume.pdf" download="Resume_Shruti_Shankar.pdf">My Resume</a></li>
                 </ul>
@@ -43,48 +44,105 @@
 
         <section class="row portfolio-sections-intro">
             <div class="col-md-12 no-left-right-padding">
-                <div class="jumbotron portfolio-sections-intro-jumbotron">
+                <div class="jumbotron portfolio-sections-intro-jumbotron" id="jumbopic">
                     <img class="desaturate img-responsive portfolio-sections-intro-jumbotron-image" alt="Shruti Shankar's Photo" src="images/shruti.jpg">
                     <h2>Hi, I'm Shruti Shankar</h2>
                     <p>A web developer, UX designer and a technology enthusiast.</p>
                 </div>
             </div>
         </section>
-        <section class="row  portfolio-section portfolio-sections-projects" id = "Mystory">
-            <div class = "col-md-6 text-justified" id ="portfolio-text">
+        <section class="row  portfolio-section portfolio-sections-projects" id = "story">
+            <div class = "col-md-3"></div>
+            <div class = "col-md-6 text-justified portfolio-text">
                 <header class="portfolio-section-header">My Story</header>
-                <p>"The capacity to Learn is a gift, the ability to learn is a skill; the
-            willigness to learn is a choice." -- Brian Herbert</p>
-                <p>I am self motivated, hard working, a team player who has the skill and the will to keep learning.
-                    My name is Shruti, I am happily married and live in Waltham with my husband.</p>
+
+                <blockquote>
+                    The capacity to learn is a gift, the ability to learn is a skill, the willingness to learn is a choice.
+                    <cite>Brian Herbert</cite>
+                </blockquote>
+
+                <p>I am self motivated, hard working, a team player who has the skill and the will to keep learning.</p>
                 <p> I have 3 years of work experience as a web developer at NCR Corporation, I was lucky enough to get an opportunity
-                to work with lovely people and learn quickly. Though I have worked in all aspects of web development,
+                    to work with some great people and learn quickly. Though I have worked in all aspects of web development,
                     I like to design and develop User Interfaces. My work in UI landed me to an UX training, in my previous organization.
-                    This introduced me to UX designing and increased my eargerness to learn more about it. I wish to be a User Experience developer someday. </p>
-            <p> While working I always wanted to learn more about User experience, Big Data, Project Management and Android mobile development.
-            So, I decided to pursue my second master's degree, at Bentley University, which covers all the technologies /feilds I was looking to learn.</p>
-            <p> Other than technology, I like to read all kinds of fiction, especially science fiction. When not with books, I like to bake and hike.</p></div>
+                    This introduced me to UX designing and increased my eagerness to learn more about it. I wish to be a User Experience developer someday.
+                </p>
+                <p> While working I always wanted to learn more about User experience, Big Data, Project Management and Android mobile development.
+                    So, I decided to pursue my second master's degree, at Bentley University, which covers all the technologies I was looking to learn.
+                </p>
+                <p>I like to read all kinds of fiction, especially sci-fi. I also like to bake and hike.</p>
+            </div>
+            <div class = "col-md-3"></div>
         </section>
-        <section class="row  portfolio-section portfolio-sections-projects">
+
+        <section class="row  portfolio-section portfolio-sections-projects" id="portfolio">
             <header class="portfolio-section-header">Projects</header>
             <div class="portfolio-section-divider"></div>
 
             <div class="col-md-4 text-center portfolio-section-project">
-                <h3>Smart home design</h3>
-                <p>End to end product design for smart homes.</p>
+                <div class="portfolio-project-label project-link" data-link="cashew.html">
+                    <h3>Cashew: For Smart Homes</h3>
+                    <p>End to end product design for smart homes.</p>
+                </div>
             </div>
 
             <div class="col-md-4 text-center portfolio-section-project">
-                <h3>Event management company</h3>
-                <p>Website design of a hypothetical event management company.</p>
+                <div class="portfolio-project-label project-link"  data-link="tpi.html">
+                    <h3>Event management company</h3>
+                    <p>Website design of an event management company.</p>
+                </div>
             </div>
 
             <div class="col-md-4 text-center portfolio-section-project">
-                <h3>Smart trash cans</h3>
-                <p>Wrote a research paper designing smart trash cans.</p>
+                <div class="portfolio-project-label project-link"  data-link="research.html">
+                    <h3>Research Paper</h3>
+                    <p>Importance of UX while designing smart trash cans.</p>
+                </div>
             </div>
         </section>
 
+        <section class="row portfolio-section portfolio-sections-projects" id = "experience">
+            <div class = "col-md-3"></div>
+            <div class = "col-md-6 text-justified">
+                <header class="portfolio-section-header">Experience</header>
+                <p> I started my career as a software intern at NCR Corporation India Pvt Ltd.</p>
+                <p> My first few projects were to develop end to end website in CMS Joomla. The internship groomed me as a web developer.
+                    User interface development and design was the part which interested me the most.
+                    I am thankful to my mentor and my first manager for giving me the liberty to try out new things and encourage my work.
+                </p>
+                <p> My internship was converted into full-time. Now, I was a part of projects, which were more crucial for my company's business.
+                    I built a dashboard to help track daily exchange of over 200,000 EDI documents. The application provided the customers
+                    exchange information in the desired formats and served as a document consumption tool. On this project, I acquired
+                    not only business and process knowledge, but also got experience in UNIX, Oracle 11g and Java. It was exciting to learn
+                    how this webapp was so important, but still a cog in the big machine.
+                </p>
+                <p> I also built a reporting tool to understand NCR customers and monitor MOM and YOY growth in business.This was used internally to makes
+                    strategic decisions for growing the business. Also used internally at NCR to track exchanged information with customers.
+                    I participated in the annual innovation challenge, our idea, an android application (we were a group of 2)
+                    was appreciated and went on to be a full project. As a part of the project we had developed a blueprint of our idea.
+                    I worked on the front-end of the blueprint, and my friend developed the web service. This project also helped me understand
+                    the work of other teams, which earlier a black box to me. This challenge made our team, a part of the innovation council.
+                    As I had worked on the front-end I got selected for an external 3-day user-experience.
+                </p>
+                <p> I would say this was the turning point of my career, my performance at the training gave me an opportunity to work at the user experience COE.
+                    Our job was to introduce the concepts of user experience across the company. I conducted events to build prototypes and help developers
+                    understand the importance UX.I was a part of the team that created the UX guidelines for NCR applications.
+                </p>
+                <p> In pretext to learn more, I decided to return to the academic field, I left my job and I am now pursuing masters.
+                    I am also work part-time as a web developer at Bentley University.
+                </p>
+            </div>
+            <div class = "col-md-3 text-justified"></div>
+        </section>
+
+        <section class="row portfolio-section" id="skills">
+            <header class="portfolio-section-header">Skills</header>
+
+        </section>
+
+        <section class="row portfolio-section" id="contact">
+            <header class="portfolio-section-header">Contact</header>
+        </section>
     </div>
 
     <footer class="portfolio-footer">Shruti Shankar | Email me: <a href="mailto: shruti07shankar@gmail.com">shruti07shankar@gmail.com</a></footer>
