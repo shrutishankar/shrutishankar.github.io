@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse portfolio-navbar-list" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#Mystory" class="anchor" data-id="story">My Story</a></li>
-                    <li><a href="#portfolio" class="anchor" data-id="portfolio">Portfolio</a></li>
+                    <li><a href="#projects" class="anchor" data-id="projects">Projects</a></li>
                     <li><a href="#exp" class="anchor" data-id="experience">Experience</a></li>
                     <li><a href="#skills" class="anchor" data-id="skills">Skills</a></li>
                     <li><a href="#contact" class="anchor" data-id="contact">Contact</a></li>
@@ -51,10 +51,13 @@
                 </div>
             </div>
         </section>
+
         <section class="row  portfolio-section portfolio-sections-projects" id = "story">
+            <header class="portfolio-section-header">My Story</header>
+            <div class="portfolio-section-divider"></div>
+
             <div class = "col-md-3"></div>
             <div class = "col-md-6 text-justified portfolio-text">
-                <header class="portfolio-section-header">My Story</header>
 
                 <blockquote>
                     The capacity to learn is a gift, the ability to learn is a skill, the willingness to learn is a choice.
@@ -75,36 +78,51 @@
             <div class = "col-md-3"></div>
         </section>
 
-        <section class="row  portfolio-section portfolio-sections-projects" id="portfolio">
+        <section class="row  portfolio-section portfolio-sections-projects" id="projects">
             <header class="portfolio-section-header">Projects</header>
             <div class="portfolio-section-divider"></div>
 
-            <div class="col-md-4 text-center portfolio-section-project">
-                <div class="portfolio-project-label project-link" data-link="cashew.html">
-                    <h3>Cashew: For Smart Homes</h3>
-                    <p>End to end product design for smart homes.</p>
+            <!-- Add multiple rows for project types -->
+            <div class="row">
+                <div class="col-md-3"></div>
+
+                <div class="col-md-6">
+
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <div class="portfolio-project-type">
+                            <h4>Academic </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-project-label project-link" data-link="cashew.html">
+                            <h4>Cashew: For Smart Homes</h4>
+                            <p>End to end product design for smart homes.</p>
+                        </div>
+                        <div class="portfolio-project-label project-link" data-link="tpi.html">
+                            <h4>Event management company</h4>
+                            <p>Website design of an event management company.</p>
+                        </div>
+                        <div class="portfolio-project-label project-link" data-link="research.html">
+                            <h4>Research Paper</h4>
+                            <p>Importance of UX while designing smart trash cans.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
                 </div>
+
+                <div class="col-md-3"></div>
             </div>
 
-            <div class="col-md-4 text-center portfolio-section-project">
-                <div class="portfolio-project-label project-link"  data-link="tpi.html">
-                    <h3>Event management company</h3>
-                    <p>Website design of an event management company.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 text-center portfolio-section-project">
-                <div class="portfolio-project-label project-link"  data-link="research.html">
-                    <h3>Research Paper</h3>
-                    <p>Importance of UX while designing smart trash cans.</p>
-                </div>
-            </div>
         </section>
 
         <section class="row portfolio-section portfolio-sections-projects" id = "experience">
+            <header class="portfolio-section-header">Experience</header>
+            <div class="portfolio-section-divider"></div>
+
             <div class = "col-md-3"></div>
             <div class = "col-md-6 text-justified">
-                <header class="portfolio-section-header">Experience</header>
+
                 <p> I started my career as a software intern at NCR Corporation India Pvt Ltd.</p>
                 <p> My first few projects were to develop end to end website in CMS Joomla. The internship groomed me as a web developer.
                     User interface development and design was the part which interested me the most.
@@ -137,11 +155,14 @@
 
         <section class="row portfolio-section" id="skills">
             <header class="portfolio-section-header">Skills</header>
+            <div class="portfolio-section-divider"></div>
 
         </section>
 
         <section class="row portfolio-section" id="contact">
             <header class="portfolio-section-header">Contact</header>
+            <div class="portfolio-section-divider"></div>
+
         </section>
     </div>
 

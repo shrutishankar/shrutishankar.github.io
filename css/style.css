@@ -1,12 +1,11 @@
 /********** GENERAL **********/
 html {
-    font-size: 11px;
     font-family: 'Open Sans', sans-serif;
     color: rgba(0, 0, 0, 0.7);
 }
 
 div {
-    /* border: 1px solid red; */
+    //border: 1px solid red;
 }
 
 .font-weight-normal {
@@ -43,6 +42,7 @@ img.desaturate{
 	filter: grayscale(100%);
 	filter: url(desaturate.svg#greyscale);
 }
+
 
 /********** QUOTATIONS **********/
 blockquote {
@@ -148,36 +148,36 @@ blockquote cite:before {
     padding-bottom: 40px;
 }
 
-.portfolio-text {
-    text-align: justify;
-    font-size: 1.2em;
-    /*margin-left: 10em*/;
-}
-
-.portfolio-project-label{
-    background: #00827F;
-    cursor: pointer;
-    padding: 4em;
-    border-radius: 50%;
-    height: 16em;
-    color: #ffffff;
-}
-
-.portfolio-project-label:hover{
-    border: 10em;
-    color: #000000;
-    opacity: 0.5;
-    transition: 1s ease-in;
-    font-weight: bold;
-
-}
-
 
 
 /********** PROJECTS **********/
 
 .portfolio-section-project {
     padding: 2em;
+}
+
+.portfolio-text {
+    text-align: justify;
+}
+
+.portfolio-project-type {
+     margin: 1em 0;
+     padding: 0 1em;
+     border: 2px solid #FFFFFF;
+ }
+
+.portfolio-project-label {
+    cursor: pointer;
+    margin: 1em 0;
+    border: 2px solid #282D32;
+    padding: 0 1em;
+}
+
+.portfolio-project-label:hover{
+    background: #282D32;
+    color: #FFFFFF;
+    transition: all 200ms ease-in-out 0s;
+    color:#C0392B;
 }
 
 /********** FOOTER **********/
