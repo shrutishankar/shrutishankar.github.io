@@ -20,3 +20,9 @@ $('.project-link').on('click', function(e){
     var page = $(this).data().link;
     document.location = page;
 });
+$('carousel-inner').on('click', function(e){
+    e.preventDefault();
+
+    var page = $(this).data().link;
+    document.location = page;
+});
