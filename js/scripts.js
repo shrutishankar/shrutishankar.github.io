@@ -39,27 +39,6 @@ for(var i=0; i<projects.length; i++) {
             trigger: 'focus'
         });
 
-//        $(projects[i]).focusin(function(event) {
-//            event.preventDefault();
-//            var shown = $(this).data().shown;
-//            if (!shown) {
-//                $(this).popover('show');
-//                $(this).data('shown') = "true";
-//            }else {
-//                $(this).popover('hide');
-//                $(this).data('shown') = "false";
-//            }
-//        });
-//
-//        $(projects[i]).focusout( function(event) {
-//            event.preventDefault();
-//            var shown = $(this).data().shown;
-//            if (shown) {
-//                $(this).popover('hide');
-//                $(this).data('shown') = "false";
-//            }
-//        });
-
     }
 }
 
