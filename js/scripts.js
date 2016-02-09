@@ -14,15 +14,52 @@ $('.anchor').on('click', function(e){
     }, 1000);
 });
 
+/**
+ * This takes you to the project link page
+ */
 $('.project-link').on('click', function(e){
     e.preventDefault();
 
     var page = $(this).data().link;
     document.location = page;
 });
-$('carousel-inner').on('click', function(e){
-    e.preventDefault();
 
-    var page = $(this).data().link;
-    document.location = page;
-});
+/**
+ * popover
+ */
+var projects = $('.portfolio-project-label');
+for(var i=0; i<projects.length; i++) {
+    var content = $(projects[i]).children('article').html();
+    if(content) {
+        $(projects[i]).popover({
+            animation: true,
+            html: true,
+            placement: 'right',
+            content: content,
+            trigger: 'focus'
+        });
+
+//        $(projects[i]).focusin(function(event) {
+//            event.preventDefault();
+//            var shown = $(this).data().shown;
+//            if (!shown) {
+//                $(this).popover('show');
+//                $(this).data('shown') = "true";
+//            }else {
+//                $(this).popover('hide');
+//                $(this).data('shown') = "false";
+//            }
+//        });
+//
+//        $(projects[i]).focusout( function(event) {
+//            event.preventDefault();
+//            var shown = $(this).data().shown;
+//            if (shown) {
+//                $(this).popover('hide');
+//                $(this).data('shown') = "false";
+//            }
+//        });
+
+    }
+}
+

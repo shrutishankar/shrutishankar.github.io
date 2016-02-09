@@ -43,6 +43,10 @@ img.desaturate{
 	filter: url(desaturate.svg#greyscale);
 }
 
+.popover {
+    width: 1200px;
+    height: 300px;
+}
 
 /********** QUOTATIONS **********/
 blockquote {
@@ -181,20 +185,13 @@ blockquote cite:before {
 .portfolio-project-label:hover{
     background: #282D32;
     transition: all 200ms ease-in-out 0s;
-    color:#C0392B;
+    color: #C0392B;
 }
-.portfolio-project-label h4 a{
 
-     color:#282D32;
-     text-decoration: none;
+.portfolio-project-label:focus {
+    border: 4px solid #C0392B
+}
 
- }
- .portfolio-project-label h4 a:hover{
-
-     color:#C0392B;
-     text-decoration: none;
-
- }
 /********** FOOTER **********/
 
 .portfolio-footer {

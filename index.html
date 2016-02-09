@@ -13,7 +13,7 @@
         <link href="css/bootstrap-theme.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
-        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-1.12.0.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </head>
 <body>
@@ -92,7 +92,7 @@
                             <h4>Academic </h4>
                         </div>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-6">
                         <div class="portfolio-project-label project-link" data-link="cashew.html">
                             <h4>Cashew: For Smart Homes</h4>
                             <p>End to end product design for smart homes.</p>
@@ -120,22 +120,36 @@
                             <h4>Professional</h4>
                         </div>
                     </div>
-                    <div class="col-md-9">
-                        <div class="portfolio-project-label project-link" data-toggle="modal" data-id="#ModalIntranet">
+                    <div class="col-md-6">
+                        <div class="portfolio-project-label" tabindex="-1" data-toggle="popover" data-trigger="focus">
                             <h4>Intranet</h4>
-                            <p>PHP, Joomla, Javascript, Jquery, Bootstrap, HTML5, CSS3, MySQL</p>
+                            <p>PHP, Joomla, Javascript, JQuery, Bootstrap, HTML5, CSS3, MySQL</p>
+                            <article class="portfolio-project-popover-content" style="display: none">
+                                Intranet project content
+                            </article>
                         </div>
-                        <div class="portfolio-project-label project-link">
+                        <div class="portfolio-project-label" tabindex="-1">
                             <h4>EDI Dashboard and EDI Metrics</h4>
                             <p>Java, AIX, Oracle 11g, PL/SQL</p>
+                            <article class="portfolio-project-popover-content" style="display: none">
+                                Dashboard and EDI Metrics project content
+                            </article>
                         </div>
-                        <div class="portfolio-project-label project-link">
+                        <div class="portfolio-project-label" tabindex="-1">
                             <h4>Innovation Expo, Android project.</h4>
                             <p>Designed UI and developed front end.</p>
+                            <article class="portfolio-project-popover-content" style="display: none">
+                                <h4>Android project content</h4>
+                                <p>In this project I created an Android application.</p>
+                                <p>Technologies used: Java, Android SDK</p>
+                            </article>
                         </div>
-                        <div class="portfolio-project-label project-link">
-                            <h4>User Expereince COE.</h4>
+                        <div class="portfolio-project-label" tabindex="-1">
+                            <h4>User Experience COE.</h4>
                             <p>Prototyping, Hueristics and brand guidelines.</p>
+                            <article class="portfolio-project-popover-content" style="display: none">
+                                UX project content
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -144,24 +158,7 @@
             </div>
 
         </section>
-        <!-- Modal -->
-        <div class="modal fade" id="ModalIntranet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <section class="row portfolio-section portfolio-sections-projects" id = "experience">
             <header class="portfolio-section-header">Experience</header>
             <div class="portfolio-section-divider"></div>
