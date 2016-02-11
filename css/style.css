@@ -44,8 +44,9 @@ img.desaturate{
 }
 
 .popover {
-    width: 1200px;
+    width: 500px;
     height: auto;
+    max-width: 600px;
 }
 
 /********** QUOTATIONS **********/
