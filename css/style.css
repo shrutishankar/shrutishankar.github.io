@@ -210,6 +210,12 @@ blockquote cite:before {
 #portfolio-section-case-intro{
     min-height:50px;
 }
+#portfolio-section-case-solution{
+    min-height:50px;
+}
+#portfolio-section-case-user-stories{
+    min-height:50px;
+}
 /********** CONTACT **********/
 
 #contact {
