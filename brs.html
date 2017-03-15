@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shruti's Portfolio: Bentley Ride Share</title>
+    <meta name="author" content="Shruti Shankar">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+    $(function(){
+      $("#navBar").load("subpageHeader.html");
+    });
+
+    </script>
+
+</head>
+<body>
+
+<div class="container-fluid" id="navBar"></div>
+<section class="row portfolio-section portfolio-sections-projects">
+    <header class="portfolio-section-header">Bentley Ride Share - An andriod application.</header>
+    <div class="portfolio-section-divider"></div>
+
+    <div class="col-md-3"></div>
+    <div class="col-md-6 text-justified portfolio-text">
+        <p> Technology has always solved our problems and helped us acheive our goals.
+            It has rapidly evolved and connected the entire world.
+            I will explain how it solved the problem of bentley students.
+            Commute has always been a problem for students as they have different schedules
+            and everyone does not have their own vehicles. The one who do often ride alone and like to have company.</p>
+        <p> We a team of 4, designed and developed an android application, which enables students to share rides with
+            fellow students. We used the diverge and converge method to develop this product.
+            The project was broken down into user stories and agile methodology was used for development.
+        </p>
+
+        <ul>
+            <li>We have two users, the driver/vehicle owners and the riders</li>
+            Features
+            <li>Login Page-- Login using Bentley ID and Password. We will be MySQL as database, which was hosted on
+                Bentley University servers.
+                The first page/dialog box will ask, if the user is a driver or a rides.
+            </li>
+            <li>For driver: The second page will be a form, which will ask for his schedule,
+                home address and destination (Bentley university by default),
+                upper limit (How many people can ride in the vehicle) and other detais
+                For Rider: A form which will ask for the home address and schedule and other detais
+            </li>
+            <li>The drivers will be shown all the riders in 2km vicinity as markers on google maps.
+                Google map APIs were used for this interface.
+                The riders: will see all the available rides on their routes,
+                the results will be filtered by, the upper limit set by the drives
+            </li>
+            <li>The driver can select the best suited route and the riders can selected the best route.
+                The driver will be notified of a new rider and can accept or reject a new rider.
+                If driver accepts, the rider will be notified and contact details will be shared
+            </li>
+            <li>A reminder will be added for the drivers as well as riders 2 hours before the schedule.
+                Any cancellation or change on the route will be notified through push notifications
+            </li>
+            <li>The application will have text and call features for the drivers and the riders on the same route</li>
+            <li>We will also introduce a text-to-speech feature, so that,
+                if need be, the driver can communicate with the riders even while driving
+            </li>
+            <li>The riders can track the vehicle, using the application,
+                provided the location of the driver is turned on.
+            </li>
+        </ul>
+
+    </div>
+    <div class="col-md-3"></div>
+</section>
+
+<div class="col-md-2"></div>
+<div class="col-md-8 text-center">
+    <button class="portfolio-project-label project-link">
+        <h4><a href="https://github.com/shrutishankar/Bentley-Ride-Share.git">Link to Git</a></h4>
+    </button>
+</div>
+<div class="col-md-2"></div>
+
+</body>
+</html>
