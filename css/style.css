@@ -5,8 +5,8 @@ body {
     font-size: 14px;
 }
 
-div {
-    //border: 1px solid red;
+.footer {
+    margin-bottom: 150px;
 }
 
 .font-weight-normal {
@@ -200,19 +200,26 @@ blockquote cite:before {
 .portfolio-project-label:focus {
     border: 4px solid #C0392B
 }
+
 #portfolio-section-abstract-intro{
     min-height:50px;
 }
+
 #portfolio-section-projects-research-paper-abstract{
     text-align:center;
     box-shadow: 10px 10px 5px #888888;
+    border: 1px solid #aaa;
+    padding: 28px;
 }
+
 #portfolio-section-case-intro{
     min-height:50px;
 }
+
 #portfolio-section-case-solution{
     min-height:50px;
 }
+
 #portfolio-section-case-user-stories{
     min-height:50px;
 }
