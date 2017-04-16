@@ -1,0 +1,30 @@
+<md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+   
+   <!-- SIDENAV CONTENT -->
+    <md-content>
+        <md-list flex>
+
+            <!-- NAV ITEM -->
+            <md-list-item ng-repeat-start="route in NavigationController.getRoutes()" 
+                          ng-click="NavigationController.routeClicked(route)">
+                          <span><md-icon class="md-default-theme" md-font-icon="{{ route.icon }}" class="material-icons"></md-icon></span>
+                          <span>{{ route.label }}</span>
+                          <span class="md-secondary" ng-if="route.childRoutes && route.childRoutes.length > 0">
+                              <md-icon ng-show="route.open" class="md-default-theme" md-font-icon="fa fa-caret-up" class="material-icons"></md-icon>
+                              <md-icon ng-show="!route.open" class="md-default-theme" md-font-icon="fa fa-caret-down" class="material-icons"></md-icon>
+                          </span>
+            </md-list-item>
+
+            <!-- NAV ITEM : CHILDREN -->
+            <md-list-item ng-repeat-end 
+                          class="animate fadeInDown enter-fadeInDown exit-fadeOutUp speed-400 stagger-200"
+                          ng-show="route.open"
+                          ng-repeat="childRoute in route.childRoutes" 
+                          ng-click="NavigationController.routeClicked(childRoute)">
+                          <span class="margin-left-25">{{ childRoute.label }}</span>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-sidenav>
+
+

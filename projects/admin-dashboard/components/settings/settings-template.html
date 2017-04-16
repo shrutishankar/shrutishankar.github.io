@@ -1,0 +1,18 @@
+<h4>Themes</h4>
+
+<div flex>
+    <md-grid-list md-cols="1" md-row-height="50px" md-gutter="2px">
+
+        <md-grid-tile ng-repeat="theme in SettingsController.themes" 
+                      class="settings-theme-item" 
+                      md-theme="theme.name" 
+                      ng-click="SettingsController.changeTheme(theme)"
+                      md-colors="{background: theme.name + '-primary'}">
+            <md-icon ng-if="SettingsController.getGlobalSettings().defaultTheme === theme" md-font-icon="fa fa-check-circle-o margin-0"></md-icon>
+            <span>{{ theme.label }}</span>
+        </md-grid-tile>
+
+    </md-grid-list>
+</div>
+
+

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Admin Dashboard</title>
+
+  <link rel="stylesheet" href="./main.css">
+
+  <script src="vendor/requirejs/require.js" data-main="./main.js"></script>
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+
+</head>
+
+<body role="document" md-theme="{{ globalSettings.defaultTheme.name }}" md-theme-watch="true">
+
+  <!-- FIXED TOP BAR -->
+  <top-bar></top-bar>
+
+  <div layout="column" layout-fill>
+    <section layout="row" flex>
+
+      <!-- NAVIGATION ON LEFT -->
+      <navigation-left></navigation-left>
+
+      <!-- FIXED CONTENT IN THE MIDDLE -->
+      <md-content flex="" layout-padding="">
+        <div ng-view></div>
+      </md-content>
+
+      <!-- NAVIGATION ON RIGHT -->
+      <navigation-right></navigation-right>
+
+    </section>
+  </div>
+
+</body>
+
+</html>

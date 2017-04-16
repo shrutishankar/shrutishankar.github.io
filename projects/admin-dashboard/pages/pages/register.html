@@ -1,0 +1,67 @@
+<div layout="row">
+    <div class="margin-h-center">
+        <!-- REGISTER FORM -->
+        <section>
+            <md-toolbar><div class="margin-hv-center">Dashboard</div></md-toolbar>
+
+            <div class="panel panel-default ss-panel register-panel">
+                <div class="panel-body">
+                    <p class="text-center margin-bottom-40"><b>SIGNUP TO GET INSTANT ACCESS</b></p>
+                    <form>
+
+                        <!-- EMAIL ADDRESS -->
+                        <md-input-container class="md-block md-icon-right">
+                            <label>Email</label>
+                            <input type="text" class="md-input">
+                            <md-icon class="md-default-theme" md-font-icon="fa fa-envelope" class="material-icons"></md-icon>
+                        </md-input-container>
+                        
+                        <!-- PASSWORD -->
+                        <md-input-container class="md-block md-icon-right">
+                            <label>Password</label>
+                            <input type="text" class="md-input">
+                            <md-icon class="md-default-theme" md-font-icon="fa fa-lock fa-lg" class="material-icons"></md-icon>
+                        </md-input-container>
+                        
+                        <!-- PASSWORD RETYPE -->
+                        <md-input-container class="md-block md-icon-right">
+                            <label>Retype Password</label>
+                            <input type="text" class="md-input">
+                            <md-icon class="md-default-theme" md-font-icon="fa fa-lock fa-lg" class="material-icons"></md-icon>
+                        </md-input-container>
+
+                        <!-- TERMS AND CONDITIONS -->
+                        <div class="form-group">
+                            <md-checkbox aria-label="Terms and conditions"> 
+                                I agree with the 
+                                <a ng-click="PagesController.showTermsAndConditions($event)">terms and conditions</a>
+                            </md-checkbox>
+                        </div>
+                        
+                        <!-- REGISTER BUTTON -->
+                        <md-input-container layout="column">
+                            <div layout="row" class="width-100-percent">
+                                <md-button class="md-raised md-primary" flex>Create Account</md-button>
+                            </div>
+                        </md-input-container>
+                        
+                        <!-- SIGN IN BUTTON -->
+                        <md-input-container layout="column">
+                            <div class="text-center">
+                                <div>Already have an account?</div>
+                            </div>
+                            <div layout="row" class="width-100-percent">
+                                <md-button class="md-raised md-default" ng-click="PagesController.gotoLoginPage()" flex>Signin</md-button>
+                            </div>
+                        </md-input-container>
+
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+

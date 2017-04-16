@@ -1,0 +1,18 @@
+<div class="multi-select-container">
+    <div class="btn-group" uib-dropdown auto-close="outsideClick" is-open="MultiselectController.isopen">
+
+        <button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle>
+            {{ MultiselectController.getButtonLabel() }} <span class="caret"></span>
+        </button>
+
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+            <li role="menuitem" ng-repeat="option in MultiselectController.options" ng-click="MultiselectController.selectItem(option, $event);">
+                <a>
+                    <i class="fa fa-check-square-o" aria-hidden="true" ng-if="option.selected"></i>
+                    <i class="fa fa-square-o" aria-hidden="true" ng-if="!option.selected"></i>
+                    {{ option.label }}
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+
+.ad-page-header {
+    margin-top: -15px;
+    border-bottom: 1px solid #AAA;
+    padding: 0 0 5px 0;
+}
+
+.ad-page-fieldset {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #EEE;
+    margin-bottom: 20px;
+}
+
+.ad-page-form-control-round {
+    border-radius: 50px;
+}
+.ad-page-fieldset {
+    margin-top:10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #EEE;
+}

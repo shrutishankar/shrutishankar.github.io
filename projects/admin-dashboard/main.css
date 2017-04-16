@@ -1,0 +1,19 @@
+@import "./vendor/bootstrap/dist/css/bootstrap.min.css";
+@import "./vendor/font-awesome/css/font-awesome.min.css";
+@import "./fa-extensions.css";
+@import "./vendor/angular-material/angular-material.css";
+@import "./vendor/nz-animate/dist/nzAnimate.min.css";
+
+@import "./common.css";
+@import "./components/components.css";
+@import "./pages/pages.css";
+
+
+body {
+    color: #929292;
+}
+
+.ss-panel {
+    border: 1px solid #CFDBE2;
+    border-top: 3px solid #CFDBE2;
+}
