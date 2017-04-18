@@ -1,7 +1,8 @@
 define([], function(){
-    var TopbarController = function($scope, $rootScope) {
+    var TopbarController = function($scope, $rootScope, $mdMedia) {
         this._scope = $scope;
         this._rootScope = $rootScope;
+        this._mdMedia = $mdMedia;
     };
 
     /**
@@ -19,6 +20,10 @@ define([], function(){
 
         closeSettings: function() {
             this._rootScope.settingsOpen = false;
+        },
+
+        toggleMenu: function(){
+            this._rootScope.globalSettings.menuOpen = !this._rootScope.globalSettings.menuOpen;
         }
     };
 

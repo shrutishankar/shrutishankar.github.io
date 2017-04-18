@@ -15,6 +15,7 @@ define([
         init: function() {
             this._rootScope.globalSettings = {
                 settingsOpen: false,
+                menuOpen: false,
                 defaultTheme: Themes.TEAL
             }
         },

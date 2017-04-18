@@ -1,9 +1,13 @@
-<md-toolbar class="md-primary">
+<md-toolbar class="md-primary" class="md-medium-tall" style="min-height: 48px; height: 48px;">
 
     <div class="md-toolbar-tools">
-        
+
+        <md-button class="md-icon-button" aria-label="Menu" ng-hide="TopbarController._mdMedia('gt-sm')" ng-click="TopbarController.toggleMenu()">
+            <md-icon class="md-default-theme" md-font-icon="fa fa-bars fa-lg vertical-align-bottom" class="material-icons"></md-icon>
+        </md-button>
+
         <md-button class="md-icon-button" aria-label="Navigation" >
-            <md-icon class="md-default-theme" md-font-icon="fa fa-tachometer fa-2x vertical-align-bottom" class="material-icons"></md-icon>
+            <md-icon class="md-default-theme" md-font-icon="fa fa-tachometer fa-lg vertical-align-bottom" class="material-icons"></md-icon>
         </md-button>
         
 
@@ -12,7 +16,7 @@
         <span flex></span>
         
         <md-button class="md-icon-button" aria-label="Favorite" ng-click="TopbarController.openSettings()">
-            <md-icon class="md-default-theme" md-font-icon="fa fa-sliders fa-rotate-90 fa-lg" class="material-icons"></md-icon>
+            <md-icon class="md-default-theme" md-font-icon="fa fa-sliders fa-rotate-90 fa-lg vertical-align-bottom" class="material-icons"></md-icon>
         </md-button>
         
     </div>
