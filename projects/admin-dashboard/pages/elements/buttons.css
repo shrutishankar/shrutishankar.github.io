@@ -1,0 +1,64 @@
+.btn-label{
+padding-right :15px;
+}
+.group3 {
+    font-size: 16px;
+    margin: 20px 0;
+    padding: 3px 15px 3px 15px;
+    color: rgb(49, 46, 46);
+    background-color: rgba(224, 224, 224, 0.96);
+    text-transform: none;
+    font-weight: 400;
+    min-width:100px;
+}
+
+.md-button.left {
+    border-radius: 10px 0 0 10px;
+}
+
+.md-button.middle {
+    border-radius: 0;
+    border-left: 1px solid rgba(230, 230, 230, 0.96);
+    border-right: 1px solid rgba(230, 230, 230, 0.96);
+}
+
+.md-button.right {
+    border-radius: 0 10px 10px 0;
+}
+.left-rounded-btn {
+  border-radius: 10px 0 0 10px;
+}
+.btn-wood {
+    background-color:burlywood;
+}
+.btn-orange {
+    background-color: orange;
+}
+.right-rounded-btn {
+  border-radius: 0 10px 10px 0;
+}
+.oval-btn {
+    border-radius: 15px 15px 15px 15px;
+}
+.btn-palevoilet {
+    background-color: palevioletred
+}
+.btn-yellowgreen{
+    background-color: yellowgreen
+}
+.md-button.md-fab {
+  line-height: 5.6rem;
+  min-width: 0;
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+}
+.png-icon{
+    width: 24px; 
+    height: 24px;   
+    margin: 5px auto auto;
+    padding: 0;
+    display: inline-block;
+    background-repeat: no-repeat no-repeat;
+    pointer-events: none;
+}

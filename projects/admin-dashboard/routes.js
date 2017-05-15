@@ -23,6 +23,7 @@ define([
 
         { label: "Forms", icon: "fa fa-pencil-square-o", childRoutes: [
             {url: "/forms/standard", label: "Standard", templateUrl: "./pages/forms/standard.html", controller: FormsController.getName() },
+            {url: "/forms/validation", label: "Validation", templateUrl: "./pages/forms/validation.html", controller: FormsController.getName() },
             {url: "/elements/wizards", label: "Wizards", templateUrl: "./pages/forms/wizards.html", controller: FormsController.getName() },
             {url: "/elements/upload", label: "Upload", templateUrl: "./pages/forms/uploads.html", controller: FormsController.getName() }
         ]},

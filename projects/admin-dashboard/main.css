@@ -17,3 +17,5 @@ body {
     border: 1px solid #CFDBE2;
     border-top: 3px solid #CFDBE2;
 }
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }

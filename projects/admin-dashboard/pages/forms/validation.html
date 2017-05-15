@@ -1,0 +1,233 @@
+<div class="ad-page-header">
+    <h3>Form Validation</h3>
+    <p>AngularJS Form Validation</p>
+</div>
+
+<div class="container-fluid" layout="row">
+    <div flex-gt-md="80" flex="100">
+
+        <!-- Basic Elements -->
+        <div layout="row">
+            <div class="panel panel-default ss-panel margin-top-10" flex="100">
+                <div class="panel-body">
+                    <h5>Basics</h5>
+                    <ng-form name="basic" class="form-horizontal" formnovalidate>
+                        <fieldset class="ad-page-fieldset">
+
+                            <!-- REQUIRED -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Required Field</label>
+                                <div class="col-sm-6"><input type="text" name="requiredfield" ng-model="requiredfield" class="form-control" required></div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">required</small></div>
+                                <div class="col-sm-offset-2 col-sm-6 text-danger">
+                                    <span ng-show="basic.requiredfield.$touched && basic.requiredfield.$invalid">This field is Required</span>
+                                </div>
+                            </div>
+
+                            <!-- EMAIL -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" name-"emailfield" ng-model="emailfield" placeholder="example@domain.com">
+                                </div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">E-mail</small></div>
+                                <div class="col-sm-offset-2 col-sm-6 text-danger">
+                                    <span ng-show="basic.emailfield.$touched && basic.emailfield.$invalid">Not a valid Email ID</span>
+                                </div>
+                            </div>
+
+                            <!-- RADIO & CHECKBOXES -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Checkboxes & Radios</label>
+                                <div class="col-sm-6">
+                                    <div><label class="font-weight-normal">
+                                        <input type="checkbox" name="checkboxfield" ng-model="checkboxfield" required> Checkbox 1</label>
+                                        </div>
+                                </div>
+                                <div class="col-sm-offset-2 text-danger">
+                                    <span ng-show="basic.checkboxfield.$touched && basic.checkboxfield.$invalid">This field is Required</span>
+                                    </div>
+                                <div class="col-sm-offset-2 col-sm-6">
+                                    <div><label class="font-weight-normal">
+                                        <input type="radio" name="customradio1" ng-model="customradio1" required> Radio 1</label></div>
+                                    <div><label class="font-weight-normal">
+                                        <input type="radio" name="customradio1" required> Radio 2</label></div>
+                                    <div class="col-sm-4"><small class="text-muted form-control-static"></small></div>
+                                </div>
+                                <div class="col-sm-offset-2 text-danger">
+                                    <span ng-show="basic.customradio1.$invalid">This field is Required</span>
+                                </div>
+                            </div>
+
+                            <!-- SELECT -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Dropdowns</label>
+                                <div class="col-sm-6">
+                                    <select class="form-control" required>
+                                        <option value="">Select</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                   </select>
+                                </div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">number</small></div>
+                                <div class="col-sm-offset-2 col-sm-6 text-danger">
+                                    <span ng-show="basic.emailfield.$touched && basic.emailfield.$invalid">Please choose a number</span>
+                                </div>
+                            </div>
+
+                            <!-- NUMBER -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Number</label>
+                                <div class="col-sm-6"><input type="number" class="form-control"></div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">number</small></div>
+                            </div>
+
+                            <!-- DIGITS -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Digits</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="digitsInput" class="form-control" ng-model="digits" ng-pattern="/^[0-9]+$/" required>
+                                </div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">ng-pattern="/^[0-9]+$/"</small></div>
+                                <!--<div class="col-sm-offset-2 col-sm-6 text-danger" ng-if="!FormsController.valid('basic', 'digitsInput', 'required')">This is a required field.</div>
+                                <div class="col-sm-offset-2 col-sm-6 text-danger" ng-if="!FormsController.valid('basic', 'digitsInput', 'pattern')">Please enter digits only.</div>-->
+                                <div class="col-sm-offset-2 col-sm-6 text-danger">
+                                    <span ng-show="basic.$submitted && basic.digitsInput.$untouched">This feild is required</span>
+                                    <span ng-show="basic.digitsInput.$touched && basic.digitsInput.$invalid">Please enter a digits only</span>
+                                </div>
+                            </div>
+
+                            <!-- ALPHANUM -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Alpha Num</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" ng-pattern="/^[a-zA-Z]+$/" ng-model="alphafield" name="alphafield">
+                                </div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">ng-pattern="/^[a-zA-Z]+$/"</small></div>
+                                <div class="col-sm-offset-2 col-sm-6 text-danger">
+                                    <span ng-show="basic.$submitted && basic.alphafield.$untouched">This field is required</span>
+                                    <span ng-show="basic.alphafield.$touched && basic.alphafield.$invalid">Please enter a digits only</span>
+                                </div>
+                            </div>
+
+                            <!-- URL -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Url</label>
+                                <div class="col-sm-6"><input type="text" class="form-control" placeholder="protocol://"></div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">type='url</small></div>
+                            </div>
+                        </fieldset>
+
+                       <!-- LENGTHS  -->    
+                        <h5>Lengths</h5>  
+                        <fieldset class="ad-page-fieldset">
+                            <!-- MIN LENGTH -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Minimum Length</label>
+                                <div class="col-sm-6"><input type="text" name="minlenfield" ng-model="minlenfield" class="form-control" ng-minlength="6"></div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">Minimum Length 6</small></div>
+                                <div class="col-sm-6 text-danger">
+                                    <span ng-show="basic.minlenfield.$touched && basic.minlenfield.$invalid">You entered less than 6 letters</span>
+                                </div>
+                            </div>
+
+                            <!-- MAX LENGTH -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Minimum Length</label>
+                                <div class="col-sm-6"><input type="text" name="maxlenfield" ng-model="maxlenfield" class="form-control" ng-maxlength="6"></div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">Maximum Length 6</small></div>
+                                <div class="col-sm-6 text-danger">
+                                    <span ng-show="basic.maxlenfield.$touched && basic.maxlenfield.$invalid">You entered more than 6 letters</span>
+                                </div>
+                            </div>
+                       
+
+                        <!-- MIN WORDS -->
+                        <div class="form-group">
+                                <label class="col-sm-2 control-label">Minimum Words</label>
+                                <div class="col-sm-6"><input type="text" name="requiredfield" ng-model="minwordsfield" class="form-control"></div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">Minimum words 6</small></div>
+                                <div class="col-sm-6 text-danger">
+                                    <span ng-show="basic.requiredfield.$touched && basic.requiredfield.$invalid">The minimum required words are 6</span>
+                                </div>
+                        </div>
+
+                        <!-- MAX WORDS -->
+                        <div class="form-group">
+                                <label class="col-sm-2 control-label">Maximum Words</label>
+                                <div class="col-sm-6"><input type="text" name="requiredfield" ng-model="maxwordsfield" class="form-control"></div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">Maximum words 6</small></div>
+                                <div class="col-sm-6 text-danger">
+                                    <span ng-show="basic.requiredfield.$touched && basic.requiredfield.$invalid">The maximum required words is 6</span>
+                                </div>
+                        </div>
+
+                         </fieldset>
+
+                        <!--RANGE-->
+                        <h5>Range</h5>  
+                        <fieldset class="ad-page-fieldset">
+                            <!-- LENGTH RANGE -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Length Range</label>
+                                <div class="col-sm-6"><input type="text" name="rangefield" ng-model="rangefield" class="form-control" ng-minlength="6" ng-maxlength="10"></div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">Range from 6 to 10</small></div>
+                                <div class="col-sm-6 text-danger">
+                                    <span ng-show="basic.rangefield.$touched && basic.rangefield.$invalid">You invalid range of letters</span>
+                                </div>
+                            </div>
+                            <!-- LENGTH WORDS -->
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Length Words</label>
+                                <div class="col-sm-6"><input type="text" name="rangewordsfield" ng-model="rangewordsfield" class="form-control"></div>
+                                <div class="col-sm-4"><small class="text-muted form-control-static">Range from 6 to 10</small></div>
+                                <div class="col-sm-6 text-danger">
+                                    <span ng-show="basic.rangewordsfield.$touched && basic.rangewordsfield.$invalid">You invalid range of letters</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- COMPARISION-->
+                        <h5>Comparision</h5>  
+                        <fieldset class="ad-page-fieldset">
+                            <!-- EQUAL TO -->
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Equal To</label>
+                                    <div class="col-sm-3"><input type="text" name="equaltofield" ng-model="equaltofield" class="form-control"></div>
+                                    <div class="col-sm-3"><input type="text" name="matchfield" ng-model="matchfield" class="form-control"></div>
+                                    <div class="col-sm-4"><small class="text-muted form-control-static">Match the 2 values</small></div>
+                                    <div class="col-sm-6 text-danger">
+                                        <span ng-show="basic.equaltofield.$touched && basic.equaltofield.$invalid">Values don't match</span>
+                                    </div>
+                                </div>
+                        </fieldset>
+
+                        <h5>Advanced</h5>  
+                        <fieldset class="ad-page-fieldset">
+                            <label class="col-sm-2 control-label">Choose</label>
+                            <div class="input-group col-sm-6">
+                                    <span class="input-group-addon">@</span>
+                                    <div class="btn-group-dropdown" uib-dropdown is-open="status.isopen">
+                                                <button type="button" class="btn btn-default" uib-dropdown-toggle>
+                                                        Choose an option <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" uib-dropdown-menu role="menu">
+                                                    <li role="menuitem">Action</li>
+                                                    <li role="menuitem">Another action</li>
+                                                </ul>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <p></p>
+                        <div class="panel-footer text-center margin--15">
+                            <input type="button" class="btn btn-primary" value="Run Validation" ng-click="FormsController.validate()">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

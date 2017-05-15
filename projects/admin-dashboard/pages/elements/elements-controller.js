@@ -1,6 +1,12 @@
 define([], function() {
-    var ElementsController = function($scope) {
-
+    var ElementsController = function($scope, $mdMedia) {
+        this._mdMedia = $mdMedia;
+        this._scope = $scope;
+        this._scope.totalItems = 64;
+        this._scope.currentPage = 4;
+        this._scope.maxSize = 5;
+        this._scope.bigTotalItems = 175;
+        this._scope.bigCurrentPage = 1;
     };
 
     ElementsController.getName = function() {
@@ -8,7 +14,14 @@ define([], function() {
     };
 
     ElementsController.prototype = {
-        // Add proto methods here
+        
+        setPage: function(pageNo){
+            this._scope.currentPage = pageNo;
+        },
+
+        pageChanged: function(){
+            $log.log('Page changed to: ' + $scope.currentPage);
+        }
     };
 
     return ElementsController;
