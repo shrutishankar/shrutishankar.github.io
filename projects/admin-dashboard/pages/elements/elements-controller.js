@@ -16,7 +16,7 @@ define([], function() {
     ElementsController.prototype = {
         
         setPage: function(pageNo){
-            this._scope.currentPage = pageNo;
+            this.$scope.currentPage = pageNo;
         },
 
         pageChanged: function(){
