@@ -1,5 +1,5 @@
 /** Type wise housing distribution 2015*/
-Highcharts.chart('construction-2015-chart-container', {
+var chart1 = Highcharts.chart('construction-2015-chart-container', {
   chart: {
     type: 'area'
   },
@@ -57,9 +57,13 @@ Highcharts.chart('construction-2015-chart-container', {
   }],
    credits: { enabled: false }
 });
+setTimeout(function() {
+    chart1.reflow();
+}, 2000);
+
 
 /** Type wise housing distribution 2016*/
-Highcharts.chart('construction-2016-chart-container', {
+var chart2 = Highcharts.chart('construction-2016-chart-container', {
   chart: {
     type: 'area'
   },
@@ -118,9 +122,12 @@ Highcharts.chart('construction-2016-chart-container', {
   }],
    credits: { enabled: false }
 });
+setTimeout(function() {
+    chart2.reflow();
+}, 2000);
 
 /** Type wise housing distribution 2017*/
-Highcharts.chart('construction-2017-chart-container', {
+var chart3 = Highcharts.chart('construction-2017-chart-container', {
   chart: {
     type: 'area'
   },
@@ -179,6 +186,9 @@ Highcharts.chart('construction-2017-chart-container', {
   }],
    credits: { enabled: false }
 });
+setTimeout(function() {
+    chart3.reflow();
+}, 2000);
 
 /**Region-wise distribution 2015 */
 Highcharts.chart('region-2015-pie-container', {
