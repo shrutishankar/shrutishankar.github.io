@@ -395,6 +395,9 @@ Highcharts.chart('unit-2015-stacked-container', {
     title: {
         text: 'Unit-wise distribution of new housing units in 2015'
     },
+    subtitle: {
+        text: '(in thousands)'
+    },
     xAxis: {
         categories: ['Authorized by building permits', 'Authorized Not Started', 'Started', 'Under Const.', 'Completed']
     },
@@ -454,6 +457,9 @@ Highcharts.chart('unit-2016-stacked-container', {
     },
     title: {
         text: 'Unit-wise distribution of new housing units in 2016'
+    },
+    subtitle: {
+        text: '(in thousands)'
     },
     xAxis: {
         categories: ['Authorized by building permits', 'Authorized Not Started', 'Started', 'Under Const.', 'Completed']
