@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Dashboard</title>
+  
+  <!-- scripts -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/modules/data.js"></script>
+  <script src="http://code.highcharts.com/modules/drilldown.js"></script>
+
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+  <!-- stylesheets-->
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css">
+  
+</head>
+
+<body>
+    <div class="topbar">
+      <span class="glyphicon glyphicon-dashboard vertical-align-text-top"></span>
+      <span>Dashboard</span>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12"><div id="construction-2015-chart-container" class="chart-box"></div></div>
+        <div class="col-xs-12"><div id="construction-2016-chart-container" class="chart-box"></div></div>
+        <div class="col-xs-12"><div id="construction-2017-chart-container" class="chart-box"></div></div>
+        <div class="col-sm-6"><div id="region-2015-pie-container" class="chart-box"></div></div>
+        <div class="col-sm-6"><div id="region-2016-pie-container" class="chart-box"></div></div>
+        <div class="col-sm-6"><div id="unit-2015-stacked-container" class="chart-box"></div></div>
+        <div class="col-sm-6"><div id="unit-2016-stacked-container" class="chart-box"></div></div>
+      </div>
+    </div>
+
+    <!-- load all charts now -->
+    <script src="./main.js"></script>
+
+</body>
+</html>
