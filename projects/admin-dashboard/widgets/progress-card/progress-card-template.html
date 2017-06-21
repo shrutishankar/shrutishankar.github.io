@@ -1,0 +1,26 @@
+<md-card>
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">{{ ProgressCardController.title }}</span>
+            <span class="md-subhead">{{ ProgressCardController.subtitle }}</span>
+        </md-card-title-text>
+        <md-card-title-media ng-if="ProgressCardController.iconClass">
+            <div class="md-media-sm progress-icon">
+                <md-icon md-font-icon="{{ ProgressCardController.iconClass }}" class="material-icons"></md-icon>
+            </div>
+        </md-card-title-media>
+    </md-card-title>
+
+    <md-card-content ng-if="ProgressCardController.progressValue">
+        <md-progress-linear ng-if="!ProgressCardController.progressColor" md-mode="determinate" value="{{ ProgressCardController.progressValue }}"
+            class="md-primary"></md-progress-linear>
+
+        <div class="progress progress-card-progress" ng-if="ProgressCardController.progressColor">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{ ProgressCardController.progressValue }}"
+                aria-valuemin="0" aria-valuemax="100" ng-style="{ 'width': ProgressCardController.progressValue + '%', 'background-color': ProgressCardController.progressColor }">
+            </div>
+        </div>
+
+    </md-card-content>
+
+</md-card>

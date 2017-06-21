@@ -16,16 +16,16 @@ define([
         { url: "/", label: "Home", icon: "fa fa-home", templateUrl: "./pages/home/home.html", controller: HomeController.getName() },
         { url: "/widgets", label: "Widgets", icon: "fa fa-th-large", templateUrl: "./pages/widgets/widgets.html", controller: WidgetsController.getName() },
         { label: "Elements", icon: "fa fa-cube", childRoutes: [
-            {url: "/elements/buttons", label: "Buttons", templateUrl: "./pages/elements/buttons.html", controller: ElementsController.getName() },
-            {url: "/elements/notification", label: "Notifications", templateUrl: "./pages/elements/notifications.html", controller: ElementsController.getName() },
-            {url: "/elements/dropdowns", label: "Dropdowns", templateUrl: "./pages/elements/dropdowns.html", controller: ElementsController.getName() }
+            {url: "/elements/buttons", label: "Buttons", templateUrl: "./pages/elements/buttons.html", controller: ElementsController.getName() }
+            /*{url: "/elements/notification", label: "Notifications", templateUrl: "./pages/elements/notifications.html", controller: ElementsController.getName() },
+            {url: "/elements/dropdowns", label: "Dropdowns", templateUrl: "./pages/elements/dropdowns.html", controller: ElementsController.getName() }*/
         ]},
 
         { label: "Forms", icon: "fa fa-pencil-square-o", childRoutes: [
             {url: "/forms/standard", label: "Standard", templateUrl: "./pages/forms/standard.html", controller: FormsController.getName() },
-            {url: "/forms/validation", label: "Validation", templateUrl: "./pages/forms/validation.html", controller: FormsController.getName() },
-            {url: "/elements/wizards", label: "Wizards", templateUrl: "./pages/forms/wizards.html", controller: FormsController.getName() },
-            {url: "/elements/upload", label: "Upload", templateUrl: "./pages/forms/uploads.html", controller: FormsController.getName() }
+            {url: "/forms/validation", label: "Validation", templateUrl: "./pages/forms/validation.html", controller: FormsController.getName() }
+            /*{url: "/elements/wizards", label: "Wizards", templateUrl: "./pages/forms/wizards.html", controller: FormsController.getName() },
+            {url: "/elements/upload", label: "Upload", templateUrl: "./pages/forms/uploads.html", controller: FormsController.getName() }*/
         ]},
 
         { label: "Pages", icon: "fa fa-file-o", childRoutes: [

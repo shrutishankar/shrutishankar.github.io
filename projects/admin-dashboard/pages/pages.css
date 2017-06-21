@@ -1,3 +1,7 @@
 @import "./forms/standard.css";
 @import "./pages/pages.css";
 @import "./elements/buttons.css";
+@import "./elements/notifications.css";
+@import "./home/home.css";
+@import "./widgets/widgets.css";
+

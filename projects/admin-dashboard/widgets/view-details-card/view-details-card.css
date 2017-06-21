@@ -1,0 +1,32 @@
+.view-details-icon{
+    margin-left: 70%;
+}
+.view-details{
+    background-color: black;
+    padding: 5px;
+    height:10%;
+}
+.view-details > a{
+    text-decoration: none;
+    color: white;
+}
+.detail-icon {
+    color: white !important;
+}
+.headline{
+    font-size: 40px;
+}
+.detail-title{
+   margin-left: 35%;
+}
+.detail-item-icon{
+    margin-left: 15%;
+    margin-top: 8%;
+}
+.detail-card{
+    height: 100px;
+    color: white;
+}
+.view-detail-card{
+    margin-left: 10px;
+}

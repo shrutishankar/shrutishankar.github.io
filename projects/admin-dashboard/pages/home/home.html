@@ -1,11 +1,82 @@
-<!doctype html>
-<html lang= "en">
-<head></head>
-         
-<!--Linkedin card-->
-<body>
-        
-<p>This is the home page !</p>
-<linkedin-card></linkedin-card>
-</body>
-</html>
+
+<!--UI PAGE-->
+<div class="content-wrapper ng-fadeInUp">
+    <div class="ad-page-header">
+    <h3>Dashboard Homepage</h3>
+</div>
+    <div class="container-fluid" layout="row" layout-xs="column">
+        <div flex-gt-sm="25" flex="90">
+            <div class="panel colored-card" flex-gt-sm="33" flex="90">
+                <div layout="row">
+                    <div flex="30">
+                        <div layout="column" layout-fill layout-align="center center">
+                            <md-icon md-font-icon="fa fa-envelope fa-3x" class="md-primary material-icons"></md-icon>
+                        </div>
+                    </div>
+                    <div flex="70" class="padding-left-25">
+                        <div class="h2">25</div>
+                        <div class="text-uppercase">New Emails</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div flex-gt-sm="25" flex="90">
+            <div class="panel colored-card" flex-gt-sm="33" flex="90">
+                <div layout="row">
+                    <div flex="30">
+                        <div layout="column" layout-fill layout-align="center center">
+                            <md-icon md-font-icon="fa fa-comments-o fa-3x" class="md-primary material-icons"></md-icon>
+                        </div>
+                    </div>
+                    <div flex="70" class="padding-left-25">
+                        <div class="h2">100</div>
+                        <div class="text-uppercase">Comments</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div flex-gt-sm="25" flex="90">
+            <div class="panel colored-card" flex-gt-sm="33" flex="90">
+                <div layout="row">
+                    <div flex="30">
+                        <div layout="column" layout-fill layout-align="center center">
+                            <md-icon md-font-icon="fa fa-code-fork fa-3x" class="md-primary material-icons"></md-icon>
+                        </div>
+                    </div>
+                    <div flex="70" class="padding-left-25">
+                        <div class="h2">30</div>
+                        <div class="text-uppercase">Code Forks</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div flex-gt-sm="25" flex="90">
+            <div class="panel colored-card" flex-gt-sm="33" flex="90">
+                <div layout="row">
+                    <div flex="30">
+                        <div layout="column" layout-fill layout-align="center center">
+                            <md-icon md-font-icon="fa fa-thumbs-o-up fa-3x" class="md-primary material-icons"></md-icon>
+                        </div>
+                    </div>
+                    <div flex="70" class="padding-left-25">
+                        <div class="h2">19</div>
+                        <div class="text-uppercase">Likes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div layout="row" layout-xs="column"> 
+        <div flex-gt-sm="70" flex="90" layout-padding layout-margin>
+            <md-card>
+                <div id="{{ HomeController.VISITOR_CHART_ID }}"></div>      
+            </md-card>
+        </div>
+        <div flex-gt-sm="30" flex="90" layout-padding layout-margin>
+            <md-card>
+                <div id="{{ HomeController.BROWSER_PIE_ID }}"></div>      
+            </md-card>
+        </div>
+    </div>
+
+</div>

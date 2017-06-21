@@ -7,6 +7,7 @@
 @import "./common.css";
 @import "./components/components.css";
 @import "./pages/pages.css";
+@import "./widgets/widgets.css";
 
 
 body {
@@ -21,4 +22,10 @@ body {
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 .fixedcontent{
     overflow:visible;
+}
+.ss-panel-right-div{
+    padding-left: 25px;
+}
+.ss-panel-left-div{
+    padding-right: 25px;
 }

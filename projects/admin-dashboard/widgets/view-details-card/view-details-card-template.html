@@ -1,0 +1,21 @@
+<div class="panel view-detail-card">
+    <div layout="row" class="detail-card" ng-style="{'background-color':ViewDetailsCardController.bgColor }">
+        <div layout="column" layout-padding layout-align="center end" hide-xs flex>
+                <md-icon md-font-icon="{{ ViewDetailsCardController.iconClass }} detail-icon"></md-icon>
+        </div> 
+        <div class="detail-title" layout="column" layout-fill layout-align="center center">
+            <div class="headline">{{ ViewDetailsCardController.title }}</div>
+            <div class="subhead">{{ ViewDetailsCardController.subtitle }}</div>
+        </div>      
+    </div>
+    <div class="view-details">
+        <a href="#">
+            <div layout="row"> 
+                <div hide-xs flex>View Details</div>
+                <div show-xs hide-gt-xs flex>Details</div>
+                <div class="view-details-icon"><i class="fa fa-chevron-circle-right"></i></div>
+            </div>
+        </a>
+    </div>
+
+</div>

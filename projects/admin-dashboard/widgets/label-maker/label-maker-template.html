@@ -1,0 +1,9 @@
+<div class="height-100-percent" 
+    ng-style="{ 'background-color': LabelMakerController.bgColor ? LabelMakerController.bgColor : '', 
+                'color': LabelMakerController.fontColor ? LabelMakerController.fontColor : '' }">
+    <md-icon ng-if="LabelMakerController.icon" md-font-icon="{{ LabelMakerController.icon }}" 
+            class="label-content-icon" 
+            ng-style="{'color': LabelMakerController.fontColor }"></md-icon>
+    <div ng-if="!LabelMakerController.icon" class="md-headline label-content">{{ LabelMakerController.title }}</div>
+    <div ng-if="!LabelMakerController.icon" class="md-subhead label-content">{{ LabelMakerController.subtitle }}</div>
+</div>

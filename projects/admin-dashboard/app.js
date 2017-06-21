@@ -3,18 +3,22 @@ define([
     "./routes",
     "./pages/pages-module",
     "./components/components-module",
-    
+    "./widgets/widgets-module",
+
     "angularAria",
     "angularAnimate",
     "angularMessages",
     "angularBootstrap",
     "angularMaterial",
+    "highcharts",
     "angularRoute"
 ], function(
     angular, 
     routes, 
     PagesModule, 
-    ComponentsModule) {
+    ComponentsModule,
+    WidgetsModule
+) {
 
     var app = angular.module('adminDashboard', [
        "ui.bootstrap",
@@ -24,7 +28,8 @@ define([
        "ngMaterial",
        
        PagesModule.name,
-       ComponentsModule.name
+       ComponentsModule.name,
+       WidgetsModule.name
     ]);
 
     app.config(['$routeProvider', function ($routeProvider) {

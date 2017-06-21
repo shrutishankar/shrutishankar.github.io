@@ -1,1 +1,245 @@
-This is the widgets page!
+<div class="ad-page-header">
+    <h3>Widgets</h3>
+</div>
+
+<div class="container-fluid" layout="row" layout-xs="column">
+    <div flex="100">
+
+        <!-- PROGRESS CARDS: SHOWS PROGRESS BARS FOR INFO TO BE DISPLAYED -->
+        <div layout="row" layout-xs="column">
+            <progress-card title="123456789" subtitle="Views in last month" progress-value="75" icon-class="fa fa-eye fa-2x" flex-gt-sm="33" flex="90"></progress-card>
+            <progress-card title="18" subtitle="Ounces of water per day" progress-value="30" icon-class="fa fa-tint fa-2x" flex-gt-sm="33" flex="90"></progress-card>
+            <progress-card title="2000" subtitle="Calories consumed yesterday" progress-value="90" progress-color="#d9534f" icon-class="fa fa-cutlery fa-2x"
+                flex-gt-sm="33" flex="90"></progress-card>
+        </div>
+
+        
+        <!-- COLORED CODED CARDS: WIHTOUT PROGRESS BAR -->
+        <div layout="row" layout-xs="column">
+            <div class="panel colored-card" flex-gt-sm="33" flex="90">
+                <div layout="row">
+                    <div flex="30" class="bg-success-card-dark">
+                        <div layout="column" layout-fill layout-align="center center">
+                            <md-icon md-font-icon="fa fa-user-o fa-3x" style="color:white;"></md-icon>
+                        </div>
+                    </div>
+                    <div flex="70" class="bg-success-card padding-left-25">
+                        <div class="h2">5</div>
+                        <div class="text-uppercase">New Connections</div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel colored-card" flex-gt-sm="33" flex="90">
+                <div layout="row">
+                    <div flex="30" class="bg-warn-card-dark">
+                        <div layout="column" layout-fill layout-align="center center">
+                            <md-icon md-font-icon="fa fa-bell-o fa-3x" style="color:white;"></md-icon>
+                        </div>
+                    </div>
+                    <div flex="70" class="bg-warn-card padding-left-25">
+                        <div class="h2">25</div>
+                        <div class="text-uppercase">Notifications</div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel colored-card" flex-gt-sm="33" flex="90">
+                <div layout="row">
+                    <div flex="30" class="bg-danger-card-dark">
+                        <div layout="column" layout-fill layout-align="center center">
+                            <md-icon md-font-icon="fa fa-star-o fa-3x" style="color:white;"></md-icon>
+                        </div>
+                    </div>
+                    <div flex="70" class="bg-danger-card padding-left-25">
+                        <div class="h2">20</div>
+                        <div class="text-uppercase">Ratings Received</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- INFO CARDS -->
+        <div layout="row" layout-xs="column">
+            <iconinfo-card title="65F" subtitle="Mostly Sunny" icon-bgcolor="#FFA500" icon-class="fa fa-sun-o fa-2x" flex-gt-sm="25" flex="90"></iconinfo-card>
+            <iconinfo-card title="5" subtitle="New Contacts" icon-bgColor="#FF0000" icon-class="fa fa-address-book-o fa-2x" flex-gt-sm="25" flex="90"></iconinfo-card>
+            <iconinfo-card title="9" subtitle="New Tasks" icon-bgColor="#008000" icon-class="fa fa-tasks fa-2x" flex-gt-sm="25" flex="90"></iconinfo-card>
+            <iconinfo-card title="12" subtitle="Likes" icon-bgColor="#2196F3" icon-class="fa fa-thumbs-o-up fa-2x" flex-gt-sm="25" flex="90"></iconinfo-card>
+        </div>
+
+
+        <!-- QUAD INFO CARDS -->
+        <div layout="row" layout-xs="column">
+            <div class="quad-info-card" flex-gt-sm="50" flex="90">
+                <div layout="column">
+                    <div layout="row">
+                        <iconinfo-card title="65F" subtitle="Mostly Sunny" icon-class="fa fa-sun-o fa-2x" flex="50"></iconinfo-card>
+                        <iconinfo-card title="5" subtitle="New Contacts" icon-class="fa fa-address-book-o fa-2x" flex="50"></iconinfo-card>
+                    </div>
+                    <div layout="row">
+                        <iconinfo-card title="9" subtitle="New Tasks" icon-class="fa fa-tasks fa-2x" flex="50"></iconinfo-card>
+                        <iconinfo-card title="12" subtitle="Likes" icon-class="fa fa-thumbs-o-up fa-2x" flex="50"></iconinfo-card>
+                    </div>
+                </div>
+            </div>
+            <div class="quad-info-card" flex-gt-sm="50" flex="90">
+                <div layout="column">
+                    <div layout="row">
+                        <iconinfo-card title="65F" subtitle="Mostly Sunny" icon-class="fa fa-sun-o fa-2x" flex="50"></iconinfo-card>
+                        <iconinfo-card title="5" subtitle="New Requests" icon-class="fa fa-address-book-o fa-2x" flex="50"></iconinfo-card>
+                    </div>
+                    <!--<div layout="row">
+                        <iconinfo-card title="9" subtitle="New Tasks this week" icon-class="fa fa-tasks fa-2x" flex="50"></iconinfo-card>
+                        <iconinfo-card title="12" subtitle="Likes Last week" icon-class="fa fa-thumbs-o-up fa-2x" flex="50"></iconinfo-card>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- PROFILE CARD : 1 -->
+        <div layout="row" layout-xs="column">
+            <div class="panel profile-panel" flex-gt-sm="33" flex="90">
+                <img ng-src="/images/nature1.jpg" class="md-card-image" alt="Washed Out">
+                <div class="profile1-pic-circle"><img ng-src="/images/profilepic.jpg" class="profile-icon" alt="Washed Out"></div>
+                <div class="profile1-card-title">
+                    <div class="md-headline">Jane Doe</div>
+                    <div class="md-subhead">Lorem Ipsum</div>      
+                </div>    
+                <div class="profile-card-content">
+                    <p>
+                        The titles of Washed Out's breakthrough song and the first single from Paracosm.
+                    </p>
+                </div>
+                <!--label-maker-->
+                <div layout="row" layout-xs="column">
+                    <label-maker title="400" subtitle="Photos" bg-color="slategray" font-color="white" flex-gt-sm="33" flex="100"></label-maker>
+                    <label-maker title="900" subtitle="Friends" bg-color="slategray" font-color="white" flex-gt-sm="33" flex="100"></label-maker>
+                    <label-maker title="400" subtitle="Following" bg-color="slategray" font-color="white" flex-gt-sm="33" flex="100"></label-maker>
+                </div>
+                
+            </div>
+
+            <!-- PROFILE CARD : 2 -->
+            <div flex-gt-sm="33" flex="90">
+                <div class="panel profile-panel">
+                    <div layout="column">
+                        <img ng-src="/images/nature1.jpg" class="md-card-image" alt="Washed Out">
+                        <div class="profile2-pic-circle" layout="row" layout-margin layout-align="end center">
+                            <img ng-src="/images/profilepic.jpg" class="profile-icon2">
+                            <div class="profile2-card-title" style="color:aliceblue">
+                                <div class="md-headline">Jane Doe</div>    
+                            </div> 
+                        </div>   
+                        <!--label-maker-->
+                        <div layout="row" style="background-color: teal">
+                            <label-maker icon="fa fa-twitter fa-2x" bg-color="teal" font-color="white"  flex="33"></label-maker>
+                            <label-maker icon="fa fa-facebook fa-2x" bg-color="teal" font-color="white"  flex="33"></label-maker>
+                            <label-maker icon="fa fa-instagram fa-2x" bg-color="teal" font-color="white"  flex="33"></label-maker>
+                        </div> 
+                        <div class="list-group">
+                            <a href="#" class="list-group-item"><i class="fa fa-clock-o" aria-hidden="true"></i> Recent Activity <span class="badge">14</span></a>
+                            <a href="#" class="list-group-item"><i class="fa fa-user" aria-hidden="true"></i> Following <span class="badge">790</span></a>
+                            <a href="#" class="list-group-item"><i class="fa fa-picture-o" aria-hidden="true"></i> Photos <span class="badge">230</span></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+
+            <!--PROFILE CARD: 3-->
+            <div flex-gt-sm="33" flex="90">
+                <div class="panel profile-panel">
+                    <div layout="column">
+                        <div layout="row" layout-xs="column">
+                            <div class="profile3-pic-circle" layout-xs="row">
+                                <img ng-src="/images/profilepic.jpg" class="profile-icon">
+                                <div class="md-headline" show-xs hide-gt-xs flex layout-margin layout-padding 
+                                    layout-align="center center">Jane Doe</div>
+                            </div> 
+                            <div class="profile3-contact" layout-xs="row">
+                                <div class="md-headline" hide-xs flex >Jane Doe</div>
+                                <div class="md-subhead"><i class="fa fa-map-marker" aria-hidden="true"></i>Location</div> 
+                                <div class="md-subhead"><i class="fa fa-twitter" aria-hidden="true"></i>@jamed</div>
+                                <div class="md-subhead"><i class="fa fa-envelope" aria-hidden="true"></i>jd@g.com</div>
+                            </div>
+                        </div>  
+                        <!-- LABEL-MAKER -->
+                        <div layout="row" layout-xs="column">
+                            <label-maker title="400" subtitle="Photos" bg-color="skyblue" flex-gt-sm="33" flex="100"></label-maker>
+                            <label-maker title="900" subtitle="Friends" bg-color="skyblue" flex-gt-sm="33" flex="100"></label-maker>
+                            <label-maker title="400" subtitle="Following" bg-color="skyblue" flex-gt-sm="33" flex="100"></label-maker>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ACTION CARDS -->
+        <div layout="row" layout-xs="column">
+            <div flex-gt-sm="33" flex="90">
+                <md-card>
+                        <md-card-title>
+                            <md-card-title-media>
+                            <div class="md-media-md card-media"><img ng-src="/images/paintingevent.jpg" class="md-card-image"></div>
+                        </md-card-title-media>
+                        <md-card-title-text class="event-card-title">
+                            <span class="md-headline">9 July</span>
+                            <span class="md-subhead">Oil Painting</span>
+                        </md-card-title-text>
+                        <md-card-actions>
+                            <md-button class="event-card-action">Register</md-button>
+                        </md-card-actions>        
+                    </md-card-title>
+                    <md-card-content>
+                        <p>
+                            The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                            two most important words in Ernest Greene's musical language: feel it.
+                        </p>
+                    </md-card-content>
+                </md-card>
+            </div>
+
+            <div flex-gt-sm="33" flex="90">
+                <md-card>
+
+                    <div id="{{ WidgetsController.LOCATION_MAP_ID }}"></div>
+                        
+                    <!-- LABEL-MAKER -->
+                    <div layout="row">
+                        <label-maker title="Find Us!" bg-color="skyblue" flex="50"></label-maker>
+                        <label-maker title="175 Forest St" subtitle="Waltham, MA" bg-color="skyblue" flex="50"></label-maker>
+                    </div>
+                    
+                </md-card>
+            </div>
+
+
+            <div flex-gt-sm="33" flex="90">
+                <md-card>
+
+                    <div id="{{ WidgetsController.MONTHLY_INCOME_CHART_ID }}"></div>
+                        
+                    <!-- LABEL-MAKER -->
+                    <div layout="row">
+                        <label-maker title="Gross Income" subtitle="28,000" bg-color="teal" font-color="white" flex-gt-sm="50" flex="100"></label-maker>
+                        <label-maker title="Net Income" subtitle="20,000" bg-color="teal" font-color="white" flex-gt-sm="50" flex="100"></label-maker>
+                    </div>
+                    
+                </md-card>
+            </div>
+        </div>
+
+
+        <!--ICON CARDS-->
+        <div layout="row" layout-sm="column">
+            <viewdetails-card title="16" subtitle="Support Tickets!" bg-color="red" icon-class="fa fa-life-ring fa-4x" flex-gt-sm="25" flex="90"></viewdetails-card>
+            <viewdetails-card title="10" subtitle="New Tasks!" bg-color="blue" icon-class="fa fa-tasks fa-4x" flex-gt-sm="25" flex="90"></viewdetails-card>
+            <!--<staticinfo-card  title="300" subtitle="Re-Tweets" bg-color="aqua" icon-class="fa fa-twitter" flex-gt-sm="25" flex="90"></staticinfo-card>-->
+        </div>
+
+        
+    </div>
+   
+</div>

@@ -8,7 +8,18 @@ requirejs.config({
         "angularMaterial": "./vendor/angular-material/angular-material.min",
         "angularRoute": "./vendor/angular-route/angular-route.min",
         "angularMessages": "./vendor/angular-messages/angular-messages.min",
-        "text": "./vendor/text/text"
+        "highcharts": "./vendor/highcharts/highcharts",
+        "text": "./vendor/text/text",
+
+        "async": "./vendor/requirejs-plugins/src/async",
+        "font": "./vendor/requirejs-plugins/src/font",
+        "goog": "./vendor/requirejs-plugins/src/goog",
+        "image": "./vendor/requirejs-plugins/src/image",
+        "json": "./vendor/requirejs-plugins/src/json",
+        "noext": "./vendor/requirejs-plugins/src/noext",
+        "mdown": "./vendor/requirejs-plugins/src/mdown",
+        "propertyParser" : "./vendor/requirejs-plugins/src/propertyParser",
+        
     },
     shim: {
         "angular" : {
@@ -43,6 +54,11 @@ requirejs.config({
         "angularRoute" : {
             deps: [ "angular" ],
             exports: "ngRoute"
+        },
+
+        "highcharts": {
+            deps: [],
+            exports: "highcharts"
         }
 
     },

@@ -1,1 +1,41 @@
-This page will show some sample notifications.
+<div class="ad-page-header">
+    <h3>Notifications</h3>
+    <p>A complete set of notifications</p>
+</div>
+
+<div class="container-fluid" layout="row">
+    <div flex-gt-md="80" flex="100">
+        <!-- CUSTOME TOASTS -->
+            <div layout="column" layout-gt-sm="row">
+            <div flex="100" flex-gt-sm="80" ng-class="{ 'margin-right-5': ElementsController._mdMedia('gt-sm') }">
+                <div class="panel panel-default ss-panel margin-top-10">
+                    <div class="panel-body">
+                        <h5>Toasts</h5>
+                            <form layout="row">
+                                <div class="ss-panel-left-div">
+                                    <div class="form-group">
+                                        <label>Title</label>
+                                        <input type="text" class="form-control" ng-model="toastTitle" placeholder="Title" size="65">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Message</label>
+                                        <textarea class="form-control" placeholder="Message" ng-model="toastMessage" rows="4"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-default" ng-click="ElementsController.showToast(toastTitle,toastMessage,data.toasttype)">
+                                        Show Toast</button>
+                                </div>
+                                <div class="ss-panel-right-div">
+                                    <div class="form-group">
+                                        <label>Toast Type</label>
+                                        <md-radio-group ng-model="data.toasttype">
+                                            <md-radio-button value="toast-success" class="md-primary" checked>Success</md-radio-button>
+                                            <md-radio-button value="Info" class="md-primary" checked>Info</md-radio-button>
+                                            <md-radio-button value="Warning" class="md-primary" checked>Warning</md-radio-button>
+                                            <md-radio-button value="Wait" class="md-primary" checked>Wait</md-radio-button>
+                                            <md-radio-button value="Error" class="md-primary" checked>Error</md-radio-button>
+                                    </div>
+                                </div>
+                            </form>
+                        
+    </div>
+</div>

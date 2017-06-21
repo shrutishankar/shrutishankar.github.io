@@ -1,0 +1,13 @@
+<div class="panel info-card">
+    <div layout="row">
+        <div flex="30" ng-style="{'background-color':IconInfoCardController.iconBgcolor}">
+            <div layout="column" layout-fill layout-align="center center">
+                <md-icon md-font-icon={{IconInfoCardController.iconClass}} class="info-icon"></md-icon>
+            </div>
+        </div>
+        <div flex="70" class="text-center padding-left-25">
+            <div class="h2 mt0">{{ IconInfoCardController.title }}</div>
+            <div class="text-uppercase">{{ IconInfoCardController.subtitle }}</div>
+        </div>
+    </div>
+</div>

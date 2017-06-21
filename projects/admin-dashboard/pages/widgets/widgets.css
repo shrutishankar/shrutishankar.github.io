@@ -1,0 +1,138 @@
+.bg-success-card{
+    background-color: green;
+    height: 100px;
+    color:white;
+}
+.bg-success-card-dark{
+    background-color:darkgreen;
+    height: 100px;
+    color:white;
+}
+.bg-danger-card{
+    background-color:red;
+    height: 100px;
+    color:white;
+}
+.bg-danger-card-dark{
+    background-color:darkred;
+    height: 100px;
+    color:white;
+}
+.bg-warn-card{
+    background-color: orange;
+    height: 100px;
+    color:white;
+}
+.bg-warn-card-dark{
+    background-color:darkorange;
+    height: 100px;
+    color:white;
+}
+.bg-info-card{
+    background-color: lightskyblue;
+    height: 100px;
+    color:white;
+}
+.bg-info-card-dark{
+    background-color:darkblue;
+    height: 100px;
+    color:white;
+}
+.colored-card {
+    margin: 8px;
+}
+
+/*** QUAD INFO CARD ***/
+.quad-info-card {
+    margin: 8px;
+}
+
+.quad-info-card .info-card {
+    margin: 0;
+    border: 1px solid #dddddd;
+}
+
+.quad-info-card > .layout-column > .layout-row > :first-child {
+    border-right: 1px solid #dddddd;
+}
+
+.quad-info-card > .layout-column > :first-child {
+    border-bottom: 1px solid #dddddd;
+}
+
+/*** PROFILE CARD ***/
+.md-card-image {
+    width: 100%;
+}
+
+.profile1-card-title{
+    margin-left:40%;
+    margin-top: 7.5%;
+}
+
+.profile-card-content{
+    margin-left: 7.5%;
+    margin-right:7.5%;
+}
+.profile1-pic-circle{
+    margin-left: 40%;
+    margin-top: -20%;
+    z-index: 1;
+    position: relative;
+}
+.profile-icon{
+    border-radius: 40px;
+}
+.profile-icon2{
+    border-radius: 40px;
+    width: 80px;
+}
+.profile2-pic-circle{
+    margin-left: 190px;
+    z-index: 1;
+    position: absolute;
+}   
+.profile2-card-title{
+    margin-top: 7.5%;
+    font-weight: bold;
+}
+.profile-panel{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.profile3-pic-circle{
+    margin-left: 13%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+} 
+.profile3-contact{
+     margin-left: 15%;
+     padding: 5px;
+     margin-top: 5%;
+}  
+.profile3-contact > .md-subhead > i{
+    padding-right: 3px;
+}
+.event-card-action{
+    background-color:palevioletred;
+    color:whitesmoke;
+    font-weight: bold;
+    border-radius: 40px;
+
+}
+.event-card-action:hover{
+    background-color:violet;
+
+}
+.event-card-title{
+    margin-left: 25px;
+}
+
+/***** MAP *****/
+#location-map-container {
+    height: 400px;
+    width: 100%;
+}
+#widgets-monthly-income-chart-container {
+    height: 200px;
+}
