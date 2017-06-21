@@ -1,0 +1,12 @@
+.navigation-left {
+    width: 280px;
+}
+
+
+@media (max-width: 599px) {
+
+    .navigation-left {
+        min-width: calc(100% - 0px); 
+        max-width: calc(100% - 0px); 
+    }
+}
