@@ -1,0 +1,42 @@
+.header {
+    background: #009688;
+    height: 60px;
+    margin: 0;
+    color: #FFFFFF;
+}
+.square {
+    height: 80px;
+    max-width: 80px!important;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    color: #51545D;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.messages {
+    min-height: 50px;
+    color: #51545D;
+}
+
+.board {
+    height: 400px;
+    width: 400px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+.current-player-symbol {
+    font-size: 48px;
+    font-weight: bold;
+    margin-left: 10px;
+}

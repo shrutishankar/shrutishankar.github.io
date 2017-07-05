@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tic Tac Toe</title>
+
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="./src/main.css">
+
+  <script src="bower_components/requirejs/require.js" data-main="./src/main.js"></script>
+</head>
+
+<body>
+
+  <div ng-controller="TicTacToeController as TicTacToeController">
+    <h1 flex="100" layout="row" layout-align="center center" class="header">Tic Tac Toe</h1>
+
+    <div>
+
+      <!-- CURRENT PLAYER INDICATOR -->
+      <div flex="100" layout="row" layout-align="center center" class="messages">
+        Current Player: <span class="current-player-symbol">{{ TicTacToeController.getCurrentPlayer().symbol }}</span>
+      </div>
+
+      <!-- MESSAGES -->
+      <div flex="100" layout="row" layout-align="center center" class="messages">
+        <span ng-if="TicTacToeController.isGameOver() && !TicTacToeController.getWinner()">No moves left. Game Over!</span>
+        <span ng-if="TicTacToeController.getWinner() !== null"> {{ TicTacToeController.getWinner().name }} won the game!</span>
+      </div>
+
+      <!-- GAME BOARD -->
+      <div flex="100" layout="row" layout-align="center center" ng-repeat="row in TicTacToeController.tictactoe.board">
+        <div class="square" flex-xs="25" flex-gt-xs="10" ng-repeat="cell in row track by $index" ng-click="TicTacToeController.cellClicked(row, $index)"
+          ng-class="{ 'cursor-pointer': cell === null && !TicTacToeController.isGameOver(), 'cursor-not-allowed': cell != null || TicTacToeController.isGameOver() }">
+          <span class="current-player-symbol">{{ cell }}</span>
+        </div>
+      </div>
+
+      <!-- NEW GAME BUTTON -->
+      <div flex="100" layout="row" layout-align="center center" layout-margin>
+        <md-button class="md-raised" md-colors="{background: 'teal'}" ng-click="TicTacToeController.resetGame()">NEW GAME</md-button>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

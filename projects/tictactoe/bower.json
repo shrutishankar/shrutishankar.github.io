@@ -1,0 +1,23 @@
+{
+  "name": "tictactoe",
+  "authors": [
+    "shrutishankar <shruti07shankar@gmail.com>"
+  ],
+  "description": "tictactoe game",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.3.3",
+    "angular": "angularjs#1.6.3",
+    "text": "requirejs-text#^2.0.15",
+    "angular-material": "^1.1.4"
+  }
+}
