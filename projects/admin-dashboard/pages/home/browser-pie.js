@@ -1,43 +1,54 @@
 define([], function () {
 
-    var BrowserPie = function(renderTo) {
+    var BrowserPie = function (renderTo) {
         this.chart = {
-            renderTo : renderTo,
-            type: 'pie'
+            renderTo: renderTo,
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie',
+            spacingTop: 20
         };
         this.title = {
-            text: 'Browser<br>Traffic<br>'
+            text: 'Browser Traffic'
         };
-        this.legend ={
+        this.legend = {
             enabled: true
         };
-        this.tooltip= {
+        this.tooltip = {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
         };
-        this.plotOptions= {
+        this.plotOptions = {
             pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
                 dataLabels: {
-                    distance: -50
-                }
+                    distancec: -50
+                },
+                showInLegend: true
             }
         },
-        this.series = [{
+            this.series = [{
+                name: "Brands",
+                colorByPoint: true,
                 data: [
-                        ['Firefox',   44.2],
-                        ['IE',       26.6],
-                        ['Safari',       20],
-                        {
-                            name: 'Chrome',
-                            y: 3.1,
-                            dataLabels: {
-                                distance: 30 // Individual distance
-                            }
-                        },
-                        ['Other',    5.4]
+                    ['Safari', 3.1],
+                    ['IE', 26.6],
+                    ['Firefox', 20],
+                    {
+                        name: 'Chrome',
+                        y: 44.2,
+                        sliced: true,
+                        selected: true,
+                        dataLabels: {
+                            distance: 30 // Individual distance
+                        }
+                    },
+                    ['Other', 5.4]
                 ],
-        }]
-        this.credits= { enabled: false }
-    
+            }]
+        this.credits = { enabled: false }
+
     };
     return BrowserPie;
 });

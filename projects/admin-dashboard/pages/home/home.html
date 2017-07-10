@@ -1,82 +1,107 @@
-
 <!--UI PAGE-->
 <div class="content-wrapper ng-fadeInUp">
     <div class="ad-page-header">
-    <h3>Dashboard Homepage</h3>
-</div>
-    <div class="container-fluid" layout="row" layout-xs="column">
-        <div flex-gt-sm="25" flex="90">
-            <div class="panel colored-card" flex-gt-sm="33" flex="90">
-                <div layout="row">
-                    <div flex="30">
-                        <div layout="column" layout-fill layout-align="center center">
-                            <md-icon md-font-icon="fa fa-envelope fa-3x" class="md-primary material-icons"></md-icon>
-                        </div>
-                    </div>
-                    <div flex="70" class="padding-left-25">
-                        <div class="h2">25</div>
-                        <div class="text-uppercase">New Emails</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div flex-gt-sm="25" flex="90">
-            <div class="panel colored-card" flex-gt-sm="33" flex="90">
-                <div layout="row">
-                    <div flex="30">
-                        <div layout="column" layout-fill layout-align="center center">
-                            <md-icon md-font-icon="fa fa-comments-o fa-3x" class="md-primary material-icons"></md-icon>
-                        </div>
-                    </div>
-                    <div flex="70" class="padding-left-25">
-                        <div class="h2">100</div>
-                        <div class="text-uppercase">Comments</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div flex-gt-sm="25" flex="90">
-            <div class="panel colored-card" flex-gt-sm="33" flex="90">
-                <div layout="row">
-                    <div flex="30">
-                        <div layout="column" layout-fill layout-align="center center">
-                            <md-icon md-font-icon="fa fa-code-fork fa-3x" class="md-primary material-icons"></md-icon>
-                        </div>
-                    </div>
-                    <div flex="70" class="padding-left-25">
-                        <div class="h2">30</div>
-                        <div class="text-uppercase">Code Forks</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div flex-gt-sm="25" flex="90">
-            <div class="panel colored-card" flex-gt-sm="33" flex="90">
-                <div layout="row">
-                    <div flex="30">
-                        <div layout="column" layout-fill layout-align="center center">
-                            <md-icon md-font-icon="fa fa-thumbs-o-up fa-3x" class="md-primary material-icons"></md-icon>
-                        </div>
-                    </div>
-                    <div flex="70" class="padding-left-25">
-                        <div class="h2">19</div>
-                        <div class="text-uppercase">Likes</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div layout="row" layout-xs="column"> 
-        <div flex-gt-sm="70" flex="90" layout-padding layout-margin>
-            <md-card>
-                <div id="{{ HomeController.VISITOR_CHART_ID }}"></div>      
-            </md-card>
-        </div>
-        <div flex-gt-sm="30" flex="90" layout-padding layout-margin>
-            <md-card>
-                <div id="{{ HomeController.BROWSER_PIE_ID }}"></div>      
-            </md-card>
-        </div>
+        <h3>Dashboard Homepage</h3>
     </div>
 
+    <!-- COLORED CARDS -->
+    <div class="container-fluid" layout="column" layout-gt-xs="row">
+
+        <!-- NEW EMAILS -->
+        <div flex="100" flex-sm="50" flex-gt-sm="25">
+            <md-card>
+                <div class="colored-card" flex-gt-sm="33">
+                    <div layout="row">
+                        <div flex="30">
+                            <div layout="column" layout-fill layout-align="center center">
+                                <md-icon md-font-icon="fa fa-envelope fa-3x" class="md-primary material-icons"></md-icon>
+                            </div>
+                        </div>
+                        <div flex="70" class="padding-left-25">
+                            <div class="h2 margin-bottom-0">25</div>
+                            <div class="text-uppercase margin-bottom-20">New Emails</div>
+                        </div>
+                    </div>
+                </div>
+            </md-card>
+        </div>
+
+        <!-- COMMENTS -->
+        <div flex="100" flex-sm="50" flex-gt-sm="25">
+            <md-card>
+                <div class="colored-card" flex-gt-sm="33">
+                    <div layout="row">
+                        <div flex="30">
+                            <div layout="column" layout-fill layout-align="center center">
+                                <md-icon md-font-icon="fa fa-comments-o fa-3x" class="md-primary material-icons"></md-icon>
+                            </div>
+                        </div>
+                        <div flex="70" class="padding-left-25">
+                            <div class="h2 margin-bottom-0">100</div>
+                            <div class="text-uppercase margin-bottom-20">Comments</div>
+                        </div>
+                    </div>
+                </div>
+            </md-card>
+        </div>
+
+        <!-- CODE FORKS -->
+        <div flex="100" flex-sm="50" flex-gt-sm="25">
+            <md-card>
+                <div class="colored-card" flex-gt-sm="33">
+                    <div layout="row">
+                        <div flex="30">
+                            <div layout="column" layout-fill layout-align="center center">
+                                <md-icon md-font-icon="fa fa-code-fork fa-3x" class="md-primary material-icons"></md-icon>
+                            </div>
+                        </div>
+                        <div flex="70" class="padding-left-25">
+                            <div class="h2 margin-bottom-0">30</div>
+                            <div class="text-uppercase margin-bottom-20">Code Forks</div>
+                        </div>
+                    </div>
+                </div>
+            </md-card>
+        </div>
+
+        <!-- LIKES -->
+        <div flex="100" flex-sm="50" flex-gt-sm="25">
+            <md-card>
+                <div class="colored-card" flex-gt-sm="33">
+                    <div layout="row">
+                        <div flex="30">
+                            <div layout="column" layout-fill layout-align="center center">
+                                <md-icon md-font-icon="fa fa-thumbs-o-up fa-3x" class="md-primary material-icons"></md-icon>
+                            </div>
+                        </div>
+                        <div flex="70" class="padding-left-25">
+                            <div class="h2 margin-bottom-0">19</div>
+                            <div class="text-uppercase margin-bottom-20">Likes</div>
+                        </div>
+                    </div>
+                </div>
+            </md-card>
+        </div>
+  
+    </div>
+
+    <!-- DASHBOARD CHARTS -->
+    <div class="container-fluid" layout-gt-sm="row" layout="column">
+
+        <!-- VISITOR CHART -->
+        <div flex-gt-sm="60" flex="100">
+            <md-card>
+                <div id="{{ HomeController.VISITOR_CHART_ID }}"></div>
+            </md-card>
+        </div>
+
+        <!-- BROWSER PIE CHART -->
+        <div flex-gt-sm="40" flex="100">
+            <md-card>
+                <div id="{{ HomeController.BROWSER_PIE_ID }}"></div>
+            </md-card>
+        </div>
+    </div>
 </div>
+
+<div class="margin-top-25"></div>
